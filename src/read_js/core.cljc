@@ -7,3 +7,9 @@
   (prn #?(:cljs (clj->js ["hello"]))))
 
 #?(:cljs (set! *main-cli-fn* -main))
+
+;; Running this with `node out/main.js` prints the following:
+;; The first line should be a JS array
+
+;; ["hello"]
+;; #js ["hello"]
